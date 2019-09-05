@@ -1,0 +1,296 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: sans-serif;
+}
+
+body {
+	background-image: url("/static/images/Books.jpeg");
+	width: 1000px;
+	background-repeat: no-repeat;
+  }
+
+.registration {
+	margin: 40px;
+	vertical-align: top;
+}
+
+.registration h1 {
+	margin-left: 100px;
+	font-weight: normal;
+	margin-top: -20px;
+	
+}
+
+.registration p {
+	display: inline-block;
+	margin-top: 20px;
+	margin-right: 20px;
+	
+}
+
+.registration .firstname {
+	margin-left: 101px;
+	height: 20px;
+	
+}
+
+.registration .lastname {
+	margin-left: 103px;
+	height: 20px;
+}
+
+.registration .email {
+	margin-left: 140px;
+	height: 20px;
+}
+
+.registration .password {
+	margin-left: 110px;
+	height: 20px;
+}
+
+.registration .confirm {
+	margin-left: 95px;
+	height: 20px;
+}
+
+.registration button {
+	margin-top: 20px;
+	margin-left: 150px;
+	height: 26px;
+	width: 60px;
+	border: solid black 2px;
+	box-shadow: 2px 2px;
+	
+}
+
+.login {
+	vertical-align: top;
+	margin-left: 400px;
+	margin-top: -350px;
+	/*display: inline-block;*/
+	
+}
+
+.login h1 {
+	margin-left: 100px;
+	font-weight: normal;
+	
+}
+
+.login p {
+	display: inline-block;
+	margin-top: 20px;
+	margin-right: 20px;
+	
+}
+
+.login .email {
+	margin-left: 106px;
+	height: 20px;
+	
+}
+
+.login .password {
+	margin-left: 77px;
+	height: 20px;
+	
+}
+
+.login button {
+	margin-top: 20px;
+	margin-left: 120px;
+	height: 26px;
+	width: 60px;
+	border: solid black 2px;
+	box-shadow: 2px 2px;
+	
+}
+
+.header	h1 {
+	width: 970px;
+	margin: 10px;
+	display: inline-block;
+	border-bottom: solid black 2px;
+}
+
+.header p {
+	margin-left: -200px;
+	display: inline-block;
+}
+
+.header a {
+	margin-left: 100px;
+	display: inline-block;
+}
+
+.post {
+	vertical-align: top;
+	text-align: top;
+	margin-left: 40px;
+	width: 900px;
+	height: 100px;
+}
+
+.post h2 {
+	margin-left: 0px;
+	margin-bottom: 10px;
+}
+
+.post input {
+	vertical-align: top;
+	margin-left: 90px;
+	height: 30px;
+	margin-top:	-20px;
+	margin-bottom: 10px;
+	border: solid black 1px;
+	width: 180px;
+	padding: 4px;
+}
+
+.postarea {
+	vertical-align: top;
+	text-align: top;
+	margin-left: 90px;
+	margin-top: -20px;
+	width: 180px;
+	height: 40px;
+	float: left;
+	border: solid black 1px;
+	padding: 4px;
+}
+
+.addbutton {
+	margin-top: 40px;
+	margin-left: -200px;
+	box-shadow: 3px 3px black;
+	color: white;
+	background-color: blue;
+	height: 30px;
+	width: 60px;
+	border: solid black 2px;
+	float: left;
+	float: top;
+
+}
+
+.all_books {
+	margin-top: -120px;
+	margin-left: 600px;
+	background-image: linear-gradient( rgb(221, 221, 221), rgb(252, 252, 252));
+	width: 370px;
+	opacity: 0.8;
+	padding: 15px;
+	border-radius: 10px;
+	
+}
+
+.post_messages h3 {
+	margin-top: 20px;
+	margin-left: 20px;
+	/*margin-bottom: 10px;*/
+	/*align-self: right;*/
+	
+}
+
+.post_messages h2 {
+	margin-left: 70px;
+	/*margin-bottom: 10px;*/
+	/*align-self: right;*/
+	
+}
+
+.post_messages h5 {
+	margin-left: 80px;
+
+	
+}
+
+.edit_title {
+	height: 30px;
+	width: 160px;
+	margin-left: 20px;
+	border: solid black 1px;
+	margin-bottom: 10px;
+
+}
+
+.edit_description {
+	margin-left: 120px;
+	height: 100px;
+	width: 160px;
+	margin-top: -15px;
+	border: solid black 1px;
+
+}
+
+.updatebutton {
+	height: 30px;
+	width: 79px;
+	margin-left: 120px;
+	margin-top: 0px;
+	border: solid black 2px;
+	box-shadow: 2px 2px;
+}
+
+.deletebook {
+	/*color: white;*/
+	height: 30px;
+	width: 79px;
+	margin-left: 0px;
+	margin-top: 0px;
+	border: solid black 2px;
+	box-shadow: 2px 2px;
+	background-color: red;
+
+}
+
+.messagebody {
+	margin-top: 0px;
+	margin-left: 20px;
+	/*margin-bottom: 10px;*/
+	/*align-self: right;*/
+	
+}
+
+.commentarea {
+	margin-left: 70px;
+	width: 900px;
+	height: 60px;
+}
+
+.commentbutton {
+	margin-top: 5px;
+	margin-left: 832px;
+	display: inline-block;
+	color: white;
+	background-color: green;
+	height: 30px;
+	width: 100px;
+	border: solid black 2px;
+	box-shadow: 3px 3px black;
+	
+}
+
+.commenthead {
+	margin-top: 10px;
+	margin-left: 70px;
+}
+
+.commentbody {
+	margin-left: 80px;
+}
+
+.deletebutton {
+	margin-top: 5px;
+	margin-left: 832px;
+	display: inline-block;
+	color: white;
+	background-color: green;
+	height: 30px;
+	width: 100px;
+	border: solid black 2px;
+	box-shadow: 3px 3px black;
+	
+}

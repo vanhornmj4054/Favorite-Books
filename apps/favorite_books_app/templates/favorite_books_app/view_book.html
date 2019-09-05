@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>View Book</title>
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+<body>
+	<div class="header">
+		<h1>Welcome, {{user.first_name}}!</h1>
+		<p></p>
+		<a href="/">Log Out</a>
+	</div>
+	<form action="/edit_book" method="POST">
+		{% csrf_token %}
+		<div>
+			<h3><input class="edit_title" type="text" name="title_edit" placeholder="{{book.title}}"></h3>
+			<p class="messagebody">(Added by: {{book.uploaded_by.first_name}} {{book.uploaded_by.last_name}})</p>
+			<p class="messagebody">(Added on: {{book.created_at}})</p>
+			<p class="messagebody">(Last updated on: {{book.updated_at}})</p>
+			<br>
+			<p class="messagebody">Description:</p>
+			<textarea class="edit_description" name="description_edit" placeholder="{{book.description}}"></textarea>
+			<br>
+			<a href="/update_book/{{book.id}}">Update</a>
+			<button class="deletebook" name="delete_book">Delete</button>
+		</div>
+	</form>
+	<br>
+	<div class="users_who_like">
+		<h2>Users Who Like This Book</h2>
+		<br>
+		{% for book in uploaded_books %}
+			<a href="/edit_book"><h3>{{book.title}}</h3></a>
+			<p class="messagebody">(added by {{book.uploaded_by.first_name}} {{book.uploaded_by.last_name}})</p>
+			<br>
+			
+			
+
+			{% if post.user.id == request.session.id %}
+			<form action="/edit_book" method="POST">
+				{% csrf_token %}
+
+				<br>			
+			</form>
+			{% endif %}	
+		{% endfor %}	
+	</div>
+	</form>
+	
+</body>
+</html>
